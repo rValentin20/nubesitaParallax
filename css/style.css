@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(16, 9, 50);
+}
+
+.parallax{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nube1, #nube2{
+    z-index: 10;
+    width: 20%;
+}
+#nubesota{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+section img{
+    position: relative;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.parallax::before{  /*sombra*/
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top,rgb(48, 108, 192), transparent);
+    z-index: 10;
+}
+
+.sec{
+    background: rgb(48, 108, 192);
+    position: relative;
+    padding: 80px;
+    color: white;
+}
+
+
